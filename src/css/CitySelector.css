@@ -1,0 +1,32 @@
+/* css/CitySelector.css */
+select {
+  padding: 8px 12px;
+  font-size: 1rem;
+  border-radius: 8px;
+  border: 1.5px solid #0288d1;
+  background-color: white;
+  color: #333;
+  outline: none;
+  cursor: pointer;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+  min-width: 180px;
+}
+
+select:hover {
+  border-color: #70a5c0;
+  box-shadow: 0 0 6px rgba(7, 112, 168, 0.4);
+}
+
+select:focus {
+  border-color: #014f7a;
+  box-shadow: 0 0 8px rgba(1, 79, 122, 0.6);
+}
+
+/* İstersen dropdown ok işaretini de özelleştirebilirsin */
+select {
+  appearance: none; /* varsayılan ok işaretini gizler */
+  background-image: url("data:image/svg+xml;charset=US-ASCII,%3csvg%20width%3d%2210%22%20height%3d%227%22%20viewBox%3d%220%200%2010%207%22%20xmlns%3d%22http%3a//www.w3.org/2000/svg%22%3e%3cpolygon%20points%3d%220%200%205%207%2010%200%22%20fill%3d%22%230288d1%22/%3e%3c/svg%3e");
+  background-repeat: no-repeat;
+  background-position: right 10px center;
+  background-size: 10px 7px;
+}
